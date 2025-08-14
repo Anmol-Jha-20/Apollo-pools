@@ -13,7 +13,7 @@ import {
   ChevronDown,
   Minus,
 } from "lucide-react";
-import Logo from "../../assets/apollologo.png";
+import Logo from "../../assets/ApolloLogoBlue.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,9 +33,11 @@ const Header = () => {
     },
     PROJECTS: {
       categories: [
-        "MOSAIC TILES",
+        "Filtration Equipment",
         "UNDERWATER LIGHT",
-        "SWIMMING POOL EQUIPMENT",
+        "Maintenance Accessories",
+        "Electromechanical Work",
+        "Civil Works With Material",
       ],
     },
   };
@@ -87,7 +89,7 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex items-center">
+            {/* <div className="flex items-center">
               <div className="bg-white rounded-lg p-2 mr-3">
                 <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
                   <div className="w-6 h-6 bg-white rounded-full relative">
@@ -96,12 +98,12 @@ const Header = () => {
                 </div>
               </div>
               <span className="text-white text-xl font-bold">Apollo Pools</span>
-            </div>
-            {/* <img
+            </div> */}
+            <img
               src={Logo}
               alt="Logo"
-              className="h-12 md:h-14 lg:h-16 w-auto object-contain"
-            /> */}
+              className="h-12 md:h-14 lg:h-16 w-auto object-contain rounded-full"
+            />
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
@@ -111,6 +113,12 @@ const Header = () => {
               >
                 HOME
               </a>
+              <a
+                href="#"
+                className="text-white font-semibold hover:text-yellow-300 transition-colors"
+              >
+                ABOUT
+              </a>
               {/* <a
                 href="#"
                 className="text-white font-semibold hover:text-yellow-300 transition-colors"
@@ -119,7 +127,7 @@ const Header = () => {
               </a> */}
 
               {/* Services Dropdown */}
-              <div
+              {/* <div
                 className="relative"
                 onMouseEnter={() => handleMouseEnter("SERVICES")}
                 onMouseLeave={handleMouseLeave}
@@ -156,7 +164,7 @@ const Header = () => {
                     ))}
                   </div>
                 )}
-              </div>
+              </div> */}
 
               {/* Projects Dropdown */}
               <div
@@ -183,7 +191,7 @@ const Header = () => {
                           href="#"
                           className="flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors text-sm font-medium group"
                         >
-                          <span className="flex items-center">
+                          <span className="flex items-center uppercase">
                             <Minus
                               size={14}
                               className="mr-3 text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-200"

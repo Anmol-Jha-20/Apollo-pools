@@ -8,6 +8,7 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
+import Logo from "../../assets/ApolloLogoBlue.png";
 
 export default function Footer() {
   return (
@@ -43,11 +44,16 @@ export default function Footer() {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-2 mb-6">
-                <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
+                {/* <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
                   <div className="w-8 h-6 bg-white rounded-sm flex items-center justify-center">
                     <div className="w-4 h-2 bg-yellow-400 rounded-sm"></div>
                   </div>
-                </div>
+                </div> */}
+                <img
+                  src={Logo}
+                  alt="Logo"
+                  className="h-12 md:h-14 lg:h-16 w-auto object-contain rounded-full"
+                />
                 <h3 className="text-2xl font-bold text-gray-800">
                   Apollo Pools
                 </h3>
@@ -82,7 +88,7 @@ export default function Footer() {
                     href="#"
                     className="text-gray-600 hover:text-blue-500 transition-colors flex items-center gap-2"
                   >
-                    <span className="text-gray-400">›</span> Services
+                    <span className="text-gray-400">›</span> About
                   </a>
                 </li>
                 <li>
@@ -115,17 +121,17 @@ export default function Footer() {
             {/* Services */}
             <div>
               <h4 className="text-xl font-semibold text-gray-800 mb-6">
-                Services
+                Our Products
                 <div className="w-8 h-0.5 bg-teal-400 mt-2"></div>
               </h4>
               <ul className="space-y-3">
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-blue-500 transition-colors flex items-center gap-2"
+                    className="text-gray-600 hover:text-blue-500 uppercase transition-colors flex items-center gap-2"
                   >
-                    <span className="text-gray-400">›</span> SWIMMING POOL
-                    CONSTRUCTION SERVICE
+                    <span className="text-gray-400">›</span> Filtration
+                    Equipment
                   </a>
                 </li>
                 <li>
@@ -133,36 +139,37 @@ export default function Footer() {
                     href="#"
                     className="text-gray-600 hover:text-blue-500 transition-colors flex items-center gap-2"
                   >
-                    <span className="text-gray-400">›</span> CIVIL SERVICE
+                    <span className="text-gray-400">›</span> UNDERWATER LIGHT
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-blue-500 transition-colors flex items-center gap-2"
+                    className="text-gray-600 hover:text-blue-500 uppercase transition-colors flex items-center gap-2"
                   >
-                    <span className="text-gray-400">›</span> SWIMMING POOL
-                    SERVICE
+                    <span className="text-gray-400">›</span> Maintenance
+                    Accessories
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-blue-500 transition-colors flex items-center gap-2"
+                    className="text-gray-600 hover:text-blue-500 uppercase transition-colors flex items-center gap-2"
                   >
-                    <span className="text-gray-400">›</span> COMMERCIAL BUILDING
-                    CONSTRUCTION SERVICE
+                    <span className="text-gray-400">›</span> Electromechanical
+                    Work
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-600 hover:text-blue-500 uppercase transition-colors flex items-center gap-2"
+                  >
+                    <span className="text-gray-400">›</span> Civil Works With
+                    Material
                   </a>
                 </li>
                 {/* <li>
-                  <a
-                    href="#"
-                    className="text-gray-600 hover:text-blue-500 transition-colors flex items-center gap-2"
-                  >
-                    <span className="text-gray-400">›</span> Cleaner
-                  </a>
-                </li>
-                <li>
                   <a
                     href="#"
                     className="text-gray-600 hover:text-blue-500 transition-colors flex items-center gap-2"
