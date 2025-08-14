@@ -62,7 +62,7 @@ const Header = () => {
   return (
     <header className="bg-white shadow-lg relative z-50">
       {/* Top Bar */}
-      <div className="bg-gray-100 py-8 px-4">
+      <div className="bg-gray-100 hidden md:block lg:block py-8 px-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-sm text-gray-600">
           <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
             <div className="flex items-center space-x-2">
@@ -87,7 +87,7 @@ const Header = () => {
       {/* Main Header */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-500">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-24">
             {/* Logo */}
             {/* <div className="flex items-center">
               <div className="bg-white rounded-lg p-2 mr-3">
@@ -102,7 +102,7 @@ const Header = () => {
             <img
               src={Logo}
               alt="Logo"
-              className="h-12 md:h-14 lg:h-16 w-auto object-contain rounded-full"
+              className="h-20 md:h-24 lg:h-24 w-auto object-contain rounded-full"
             />
 
             {/* Desktop Navigation */}
